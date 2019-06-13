@@ -50,6 +50,14 @@
 		}
 
 		a {color:#000;}
+		
+		.form-row {
+			display:flex;
+			justify-content:space-between;
+		}
+		.form-row > * {
+			width:48%;
+		}
 	</style>
 	<script type="text/JavaScript">
 	function validate(myform) {
@@ -88,11 +96,16 @@
 			<label for="email_id">E-mail adresse</label>
 			<input type="email" name="email_address" id="email_id">
 
-			<label for="firstname_id">Fornavn</label>
-			<input type="text" name="data_Fornavn" id="firstname_id">
-			
-			<label for="lastname_id">Efternavn</label>
-			<input type="text" name="data_Efternavn" id="lastname_id">
+			<div class="form-row">
+				<div>
+					<label for="firstname_id">Fornavn</label>
+					<input type="text" name="data_Fornavn" id="firstname_id">
+				</div>
+				<div>
+					<label for="lastname_id">Efternavn</label>
+					<input type="text" name="data_Efternavn" id="lastname_id">
+				</div>
+			</div>
 
 			<label for="country_id">Land</label>
 			<select name="data_Land" id="country_id">
